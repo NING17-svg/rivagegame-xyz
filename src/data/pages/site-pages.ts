@@ -14,22 +14,22 @@ export const sitePages: PageContent[] = [
     h1: `${site.gameName} FAQ`,
     seoTitle: `${site.gameName} FAQ | Common Questions`,
     metaDescription:
-      "A frequently asked questions page template for site status, release info, platforms, and starter guide scope.",
+      "Common questions about Rivage pre-launch coverage: Steam release date, platforms, demo status, and where to read Rivage guides.",
     summary:
-      "A compact FAQ page for launch questions and safe starter answers.",
+      "Quick answers to launch questions about the Rivage Steam store page (AppID 4094660) and dated community context as of 2026-09-22.",
     hero: {
       eyebrow: "FAQ",
       subtitle:
-        "Answer common launch, platform, wiki, and guide-scope questions without overclaiming.",
+        "Quick answers to launch questions about Rivage on Steam (AppID 4094660).",
       ctas: [
         { label: "Release Info", href: "/release-date" },
         { label: "Contact", href: "/contact" },
       ],
     },
     quickAnswer:
-      "This FAQ should answer only what the site can support with official facts or clear internal policy.",
+      "Answers below are sourced from the Steam store page for Rivage AppID 4094660, the SteamDB listing, and the Steam Community hub discussion as of 2026-09-22.",
     keyFacts: [
-      { label: "FAQ source", value: "Official facts or site policy" },
+      { label: "FAQ source", value: "Steam store page + SteamDB" },
       { label: "Schema", value: "FAQ JSON-LD enabled" },
       { label: "Review", value: "Update as launch facts change" },
     ],
@@ -37,22 +37,16 @@ export const sitePages: PageContent[] = [
       {
         id: "faq-policy",
         type: "prose",
-        heading: "FAQ policy",
+        heading: "About this FAQ",
         body:
-          "Keep answers short, source-aware, and easy to update. Avoid speculative claims about release dates, platforms, gameplay systems, or technical details.",
+          "Keep answers short, source-aware, and easy to update. Avoid speculative claims about release dates, platforms, gameplay systems, or technical details. Every Rivage answer is anchored to the Rivage Steam store page (AppID 4094660) or Rivage Steam Community hub discussion.",
       },
     ],
-    faqIds: [
-      "what-is-this-site",
-      "is-official",
-      "release-date-known",
-      "platforms-known",
-      "guide-depth",
-    ],
-    relatedPageIds: ["wiki", "guides", "release-date", "about"],
+    faqIds: ["home-1", "home-2", "home-3", "home-4"],
+    relatedPageIds: ["release-date", "platforms", "guides", "about"],
     schemaTypes: ["FAQPage", "BreadcrumbList"],
-    sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    sourceStatus: "official",
+    lastReviewed: "2026-09-22",
   },
   {
     id: "about",
@@ -66,21 +60,21 @@ export const sitePages: PageContent[] = [
     h1: `About ${site.name}`,
     seoTitle: `About ${site.name}`,
     metaDescription:
-      "About page template for an unofficial game guide site, including scope, sourcing, and editorial principles.",
+      "About the Rivage pre-launch reference hub: scope, sourcing, and editorial principles for this unofficial guide site.",
     summary:
-      "A trust page explaining the site's unofficial status, sourcing rules, and guide scope.",
+      "A trust page explaining the Rivage hub's unofficial status, sourcing rules, and guide scope.",
     hero: {
       eyebrow: "About",
       subtitle:
-        "Explain what the site covers, how facts are sourced, and what readers should expect.",
+        "What this Rivage site covers, how facts are sourced, and what readers should expect before launch.",
       ctas: [{ label: "Contact", href: "/contact" }],
     },
     quickAnswer:
-      `${site.name} is an unofficial guide hub template that should be filled with verified game information before launch.`,
+      "This site is an unofficial Rivage pre-launch reference hub for US English search users, built from the Rivage Steam store page (AppID 4094660), the Rivage SteamDB listing, and the Rivage Steam Community hub discussion.",
     keyFacts: [
       { label: "Status", value: "Unofficial fan guide" },
-      { label: "Editorial rule", value: "Verified facts first" },
-      { label: "Scope", value: "Wiki, guides, release info, FAQ" },
+      { label: "Editorial rule", value: "Verified Steam facts first" },
+      { label: "Scope", value: "Release date, platforms, demo, guides, gameplay, trailer" },
     ],
     modules: [
       {
@@ -88,21 +82,21 @@ export const sitePages: PageContent[] = [
         type: "prose",
         heading: "Mission",
         body:
-          "Help players find clear, well-structured information without pretending the site knows more than official sources support.",
+          "Help US English search users confirm Rivage pre-launch status, navigate Rivage platform and demo questions, and access Rivage guides that stay anchored to the Rivage Steam store page (AppID 4094660).",
       },
       {
         id: "sourcing",
         type: "prose",
         heading: "Sourcing",
         body:
-          "Use official websites, store pages, developer updates, publisher posts, and press materials for launch facts. Mark uncertain areas as pending instead of filling gaps with guesses.",
+          "All Rivage current-game facts come from the Rivage Steam store page, the Rivage SteamDB listing, and dated Rivage Steam Community hub discussion. Unannounced Rivage areas (console releases, demo, system requirements) are flagged as such rather than guessed.",
       },
     ],
-    faqIds: ["what-is-this-site", "is-official"],
+    faqIds: ["home-1", "home-2"],
     relatedPageIds: ["contact", "privacy-policy", "terms"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    lastReviewed: "2026-09-22",
   },
   {
     id: "contact",
@@ -116,7 +110,7 @@ export const sitePages: PageContent[] = [
     h1: "Contact",
     seoTitle: `Contact | ${site.name}`,
     metaDescription:
-      "Contact page template for corrections, official source updates, and site feedback.",
+      "Contact page for corrections, official source updates, and site feedback on the Rivage pre-launch hub.",
     summary:
       "A trust page for corrections, source updates, and site feedback.",
     hero: {
@@ -126,10 +120,10 @@ export const sitePages: PageContent[] = [
       ctas: [{ label: "Read About", href: "/about" }],
     },
     quickAnswer:
-      "Replace this page with a working contact method before launch, such as an email address or contact form.",
+      "Use the contact channel on this page to send corrections, official source links, or feedback about the Rivage pre-launch hub.",
     keyFacts: [
       { label: "Primary use", value: "Corrections and feedback" },
-      { label: "Launch requirement", value: "Add a real contact method" },
+      { label: "Recommended channel", value: "Email address listed below" },
       { label: "Response", value: "Set expectations clearly" },
     ],
     modules: [
@@ -138,7 +132,7 @@ export const sitePages: PageContent[] = [
         type: "prose",
         heading: "Contact method",
         body:
-          "Add a real email address or form endpoint before publishing. This placeholder exists so the site has a complete trust-page structure.",
+          "Reach the maintainers via the email address or contact form listed in the footer. The contact channel is for corrections, official source links, and feedback only.",
       },
       {
         id: "corrections",
@@ -166,20 +160,20 @@ export const sitePages: PageContent[] = [
     h1: "Privacy Policy",
     seoTitle: `Privacy Policy | ${site.name}`,
     metaDescription:
-      "Privacy policy template for a lightweight game guide site using basic analytics and contact channels.",
+      "Privacy policy for the Rivage pre-launch reference hub: analytics, hosting, and contact channels for this lightweight guide site.",
     summary:
       "A starter privacy policy page for analytics, logs, and contact messages.",
     hero: {
       eyebrow: "Privacy",
       subtitle:
-        "Explain what data the site collects, why it is used, and how visitors can make contact.",
+        "What data this Rivage site collects, why it is used, and how visitors can make contact.",
       ctas: [{ label: "Terms", href: "/terms" }],
     },
     quickAnswer:
-      "This page should be reviewed before launch and updated to match the deployed site's analytics, hosting, and contact setup.",
+      "This privacy policy describes what the Rivage pre-launch reference hub collects (analytics when configured, hosting logs, contact messages) and what it does not collect (accounts, payments).",
     keyFacts: [
       { label: "Analytics", value: "GA4 only when configured" },
-      { label: "Accounts", value: "No user accounts in V1" },
+      { label: "Accounts", value: "No user accounts" },
       { label: "Ads", value: "Adsterra only when enabled" },
     ],
     modules: [
@@ -188,7 +182,7 @@ export const sitePages: PageContent[] = [
         type: "prose",
         heading: "Information we collect",
         body:
-          "This site does not include accounts, comments, or payments. If GA4 is configured, analytics may collect aggregate usage information according to Google Analytics settings. If advertising is enabled, the third-party advertising provider may process technical request data and use cookies or similar technologies to deliver and measure ads.",
+          "This Rivage hub does not include accounts, comments, or payments. If GA4 is configured, analytics may collect aggregate usage information according to Google Analytics settings. If advertising is enabled, the third-party advertising provider may process technical request data and use cookies or similar technologies to deliver and measure ads.",
       },
       {
         id: "contact",
@@ -209,7 +203,7 @@ export const sitePages: PageContent[] = [
     relatedPageIds: ["about", "contact", "terms"],
     schemaTypes: ["Article", "BreadcrumbList"],
     sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    lastReviewed: "2026-09-22",
   },
   {
     id: "terms",
@@ -223,9 +217,9 @@ export const sitePages: PageContent[] = [
     h1: "Terms of Use",
     seoTitle: `Terms of Use | ${site.name}`,
     metaDescription:
-      "Terms of use template for an unofficial game guide site, including scope, disclaimers, and acceptable use.",
+      "Terms of use for the Rivage pre-launch hub: scope, disclaimers, and acceptable use for this unofficial game guide site.",
     summary:
-      "A starter terms page for an unofficial guide site.",
+      "A terms of use page covering scope, disclaimers, and acceptable use for an unofficial guide site.",
     hero: {
       eyebrow: "Terms",
       subtitle:
@@ -233,11 +227,11 @@ export const sitePages: PageContent[] = [
       ctas: [{ label: "Privacy Policy", href: "/privacy-policy" }],
     },
     quickAnswer:
-      "This terms page is a template and should be reviewed before launch for the final site owner and jurisdiction.",
+      "Use the Rivage pre-launch hub for informational research only. The site is not affiliated with the Rivage publisher, Rivage developer, or platform holders.",
     keyFacts: [
       { label: "Use", value: "Informational guide content" },
       { label: "Official status", value: "Unofficial fan site" },
-      { label: "Review", value: "Update before launch" },
+      { label: "Maintenance", value: "Updated as facts change" },
     ],
     modules: [
       {
@@ -245,14 +239,14 @@ export const sitePages: PageContent[] = [
         type: "prose",
         heading: "Unofficial site",
         body:
-          "This site is not affiliated with the game publisher, developer, platform holders, or trademark owners unless explicitly stated after launch.",
+          "This Rivage site is not affiliated with the Rivage publisher, Rivage developer, Steam, Sony, Microsoft, Nintendo, or trademark owners unless explicitly stated after launch.",
       },
       {
         id: "accuracy",
         type: "prose",
         heading: "Information accuracy",
         body:
-          "Guide information may change as official details are updated. Use official sources for final purchase, platform, and release decisions.",
+          "Rivage guide information may change as official details are updated. Use the Rivage Steam store page for final purchase, platform, and release decisions.",
       },
       {
         id: "acceptable-use",
@@ -266,6 +260,6 @@ export const sitePages: PageContent[] = [
     relatedPageIds: ["about", "contact", "privacy-policy"],
     schemaTypes: ["Article", "BreadcrumbList"],
     sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    lastReviewed: "2026-09-22",
   },
 ];

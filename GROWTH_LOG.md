@@ -24,11 +24,11 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 - Entity changed: Generic entity Hubs/details now render source links, relationships, and optional registered local images from one base fact package.
 - Verification: Typecheck, template validation, content validation, rendered SEO validation, route-manifest generation, and multilingual entity fixtures.
 
-### YYYY-MM-DD - Template baseline initialized
+### 2026-09-28 - Rivage pre-launch configuration
 
-- Task: Create the initial generated guide-site baseline.
-- Files changed: Template project files.
-- URLs affected: `/`, `/wiki`, `/guides`, `/release-date`, `/faq`, `/about`, `/contact`, `/privacy-policy`, `/terms`.
-- Content changed: Neutral placeholder content only.
-- Ad baseline: Fixed Adsterra-ready modules are present and disabled; no ad markup or request is emitted.
-- Follow-up: Replace this entry with a real launch/configuration entry when the one-click builder fills the site for a specific game.
+- Task: Configure the generated V3 template for Rivage (Steam AppID 4094660, planned release Sep 22, 2026) on `rivagegame.xyz`.
+- Files changed: `src/data/site.ts`, `wrangler.jsonc`, `package.json`, `src/data/pages/*.ts` (10 content pages + trust pages + wiki fixture), `src/data/faq.ts` (31 FAQ items), `src/data/navigation.ts`, `src/lib/content.ts` helpers, `AGENTS.md`, `CONTENT_INDEX.md`, `public/indexnow-*.txt`.
+- URLs affected: `/`, `/release-date`, `/platforms`, `/system-requirements`, `/demo`, `/guides`, `/guides/walkthrough`, `/guides/beginner`, `/gameplay`, `/trailer`, `/faq`, `/about`, `/contact`, `/privacy-policy`, `/terms`, `/wiki-archive` (reserved fixture).
+- Content changed: All page copy anchored to the Steam store page, SteamDB listing, and Steam Community hub as of 2026-09-22. Unannounced areas (PS5, Xbox, Switch, demo, system requirements, Steam Deck verification) are flagged rather than guessed.
+- Ad baseline: Fixed Adsterra-ready modules are present and disabled; no ad markup or request is emitted. Only `adsterra-integrator` may populate the six Adsterra unit values after registry activation.
+- Verification: `npm run verify` (typecheck + lint + validate:template + validate:content + validate:indexnow + build + validate:rendered-seo) passed; V3 route contract validation passed; public-content-hygiene-check passed.

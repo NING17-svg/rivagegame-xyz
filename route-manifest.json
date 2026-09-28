@@ -1,0 +1,162 @@
+[
+  {
+    "id": "home",
+    "translationKey": "home",
+    "locale": "en-US",
+    "routeKind": "home",
+    "url": "/",
+    "alternates": {
+      "en-US": "/"
+    }
+  },
+  {
+    "id": "about",
+    "translationKey": "about",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/about",
+    "alternates": {
+      "en-US": "/about"
+    }
+  },
+  {
+    "id": "contact",
+    "translationKey": "contact",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/contact",
+    "alternates": {
+      "en-US": "/contact"
+    }
+  },
+  {
+    "id": "demo",
+    "translationKey": "demo",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/demo",
+    "alternates": {
+      "en-US": "/demo"
+    }
+  },
+  {
+    "id": "faq",
+    "translationKey": "faq",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/faq",
+    "alternates": {
+      "en-US": "/faq"
+    }
+  },
+  {
+    "id": "gameplay-overview",
+    "translationKey": "gameplay-overview",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/gameplay",
+    "alternates": {
+      "en-US": "/gameplay"
+    }
+  },
+  {
+    "id": "guides",
+    "translationKey": "guides-hub",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides",
+    "alternates": {
+      "en-US": "/guides"
+    }
+  },
+  {
+    "id": "beginner-guide",
+    "translationKey": "beginner-guide",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides/beginner",
+    "alternates": {
+      "en-US": "/guides/beginner"
+    }
+  },
+  {
+    "id": "walkthrough",
+    "translationKey": "walkthrough",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides/walkthrough",
+    "alternates": {
+      "en-US": "/guides/walkthrough"
+    }
+  },
+  {
+    "id": "platforms",
+    "translationKey": "platforms",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/platforms",
+    "alternates": {
+      "en-US": "/platforms"
+    }
+  },
+  {
+    "id": "privacy-policy",
+    "translationKey": "privacy-policy",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/privacy-policy",
+    "alternates": {
+      "en-US": "/privacy-policy"
+    }
+  },
+  {
+    "id": "release-date",
+    "translationKey": "release-date",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/release-date",
+    "alternates": {
+      "en-US": "/release-date"
+    }
+  },
+  {
+    "id": "system-requirements",
+    "translationKey": "system-requirements",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/system-requirements",
+    "alternates": {
+      "en-US": "/system-requirements"
+    }
+  },
+  {
+    "id": "terms",
+    "translationKey": "terms",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/terms",
+    "alternates": {
+      "en-US": "/terms"
+    }
+  },
+  {
+    "id": "trailer-and-media",
+    "translationKey": "trailer-and-media",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/trailer",
+    "alternates": {
+      "en-US": "/trailer"
+    }
+  },
+  {
+    "id": "wiki",
+    "translationKey": "wiki",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/wiki-archive",
+    "alternates": {
+      "en-US": "/wiki-archive"
+    }
+  }
+]

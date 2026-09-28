@@ -7,74 +7,46 @@ export const wikiPages: PageContent[] = [
     translationKey: "wiki",
     locale: "en-US",
     routeKind: "fixed",
-    slug: "wiki",
-    url: "/wiki",
+    slug: "wiki-archive",
+    url: "/wiki-archive",
     pageType: "wiki",
     presentation: { shell: "hub" },
-    h1: `${site.gameName} Wiki`,
-    seoTitle: `${site.gameName} Wiki | Facts, Systems, and Starter Notes`,
+    h1: `${site.gameName} Reference Index`,
+    seoTitle: `${site.gameName} Reference Index`,
     metaDescription:
-      "A neutral wiki page template for official facts, game overview notes, systems, platforms, and starter references.",
+      "Reference index for the Rivage pre-launch hub: release status, platforms, demo, guides, gameplay, system requirements, and trailer pages.",
     summary:
-      "A structured wiki landing page for official facts and core game systems.",
+      "Reference index covering the Rivage release status, platforms, demo news, guides, gameplay, system requirements, and trailer coverage.",
     hero: {
-      eyebrow: "Wiki",
+      eyebrow: "Reference",
       subtitle:
-        "Collect official facts, systems, platforms, and starter references in one stable page.",
+        "Reference index covering the Rivage release status, platforms, demo, guides, gameplay, system requirements, and trailer coverage.",
       ctas: [
-        { label: "Read Guides", href: "/guides" },
-        { label: "Check FAQ", href: "/faq" },
+        { label: "Release Date", href: "/release-date" },
+        { label: "Platforms", href: "/platforms" },
       ],
     },
     quickAnswer:
-      "Use this wiki page as the verified fact hub for the game. Do not add unconfirmed mechanics, maps, characters, items, or dates.",
+      "This reference index lists every dedicated Rivage coverage page on this hub, including the release date, platforms, demo, guides, gameplay, system requirements, and trailer pages.",
     keyFacts: [
-      { label: "Fact source", value: "Official sources only" },
-      { label: "Content depth", value: "Starter wiki notes" },
-      { label: "Update rule", value: "Expand after launch signals appear" },
+      { label: "Steam AppID", value: "4094660" },
+      { label: "Planned release", value: "September 22, 2026" },
+      { label: "Launch platforms", value: "Steam (PC, Windows)" },
+      { label: "Source rule", value: "Steam store page + SteamDB" },
     ],
     modules: [
       {
-        id: "overview",
+        id: "wiki-index-note",
         type: "prose",
-        heading: "Game overview",
+        heading: "About this index",
         body:
-          "Replace this overview with confirmed information from official store pages, press kits, developer posts, or publisher pages. Keep uncertain details out of the page.",
-      },
-      {
-        id: "systems",
-        type: "prose",
-        heading: "Systems to document",
-        body:
-          "Use this section for confirmed systems such as combat, progression, exploration, multiplayer, crafting, quests, or modes. If official sources do not confirm a system, leave it out.",
-      },
-      {
-        id: "official-links",
-        type: "prose",
-        heading: "Official sources",
-        body:
-          "Add official links here so future content updates can trace every fact back to a trustworthy source.",
-        links: site.officialSources,
-      },
-      {
-        id: "reference-coverage",
-        type: "data-table",
-        heading: "Reference Coverage",
-        columns: [
-          { key: "category", label: "Category" },
-          { key: "status", label: "Status" },
-          { key: "source", label: "Source Rule" },
-        ],
-        rows: [
-          { category: "Core systems", status: "Starter coverage", source: "Official sources" },
-          { category: "Guides", status: "Expand with evidence", source: "Verified play research" },
-        ],
+          "The Rivage pre-launch reference hub organizes release status, platforms, demo news, gameplay, system requirements, and trailer coverage into dedicated pages instead of a generic wiki.",
       },
     ],
-    faqIds: ["platforms-known"],
-    relatedPageIds: ["guides", "release-date", "faq"],
-    schemaTypes: ["CollectionPage", "BreadcrumbList"],
-    sourceStatus: "placeholder",
-    lastReviewed: "2026-06-18",
+    faqIds: [],
+    relatedPageIds: ["release-date", "platforms", "guides"],
+    schemaTypes: ["Article", "BreadcrumbList"],
+    sourceStatus: "internal",
+    lastReviewed: "2026-09-22",
   },
 ];

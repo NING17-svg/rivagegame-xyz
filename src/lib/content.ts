@@ -1,9 +1,16 @@
 import type { FAQItem, PageContent, RouteKind } from "@/types/content";
 import { entityFamilies } from "@/data/entities";
 import { faqItems } from "@/data/faq";
-import { guidePages } from "@/data/pages/guide-pages";
 import { homePage } from "@/data/pages/home";
-import { releasePages } from "@/data/pages/release-pages";
+import { page_release_date } from "@/data/pages/page_release_date";
+import { page_platforms } from "@/data/pages/page_platforms";
+import { page_system_requirements } from "@/data/pages/page_system_requirements";
+import { page_demo } from "@/data/pages/page_demo";
+import { page_guides_hub } from "@/data/pages/page_guides_hub";
+import { page_walkthrough } from "@/data/pages/page_walkthrough";
+import { page_beginner_guide } from "@/data/pages/page_beginner_guide";
+import { page_gameplay_overview } from "@/data/pages/page_gameplay_overview";
+import { page_trailer_and_media } from "@/data/pages/page_trailer_and_media";
 import { sitePages } from "@/data/pages/site-pages";
 import { wikiPages } from "@/data/pages/wiki-pages";
 import { buildEntityPages } from "@/lib/entities";
@@ -11,10 +18,17 @@ import { normalizePath } from "@/lib/localization";
 
 const fixedPages: PageContent[] = [
   homePage,
-  ...wikiPages,
-  ...guidePages,
-  ...releasePages,
+  page_release_date,
+  page_platforms,
+  page_system_requirements,
+  page_demo,
+  page_guides_hub,
+  page_walkthrough,
+  page_beginner_guide,
+  page_gameplay_overview,
+  page_trailer_and_media,
   ...sitePages,
+  ...wikiPages,
 ];
 
 const pages: PageContent[] = [
@@ -79,49 +93,32 @@ export function getFinalRouteManifest(
     .sort((left, right) => left.url.localeCompare(right.url));
 }
 
-export function getFaqsForPage(page: PageContent): FAQItem[] {
-  return page.faqIds
-    .map((id) => faqItems.find((faq) => faq.id === id))
-    .filter((faq): faq is FAQItem => Boolean(faq));
-}
-
 export function getRelatedPages(page: PageContent): PageContent[] {
   return page.relatedPageIds
     .map((id) => getPageById(id))
-    .filter((related): related is PageContent => Boolean(related));
+    .filter((value): value is PageContent => value !== undefined);
 }
 
-function compareUrls(left: PageContent, right: PageContent): number {
-  if (left.url === right.url) return 0;
-  return left.url < right.url ? -1 : 1;
+export function getFaqsForPage(page: PageContent): FAQItem[] {
+  return page.faqIds
+    .map((id) => faqItems.find((faq) => faq.id === id))
+    .filter((value): value is FAQItem => value !== undefined);
 }
 
-/**
- * Returns a small, deterministic set of content pages for a locale's homepage.
- * Trust pages and tools are intentionally excluded so this is driven only by
- * editorial review dates on actual indexable content pages.
- */
 export function getRecentUpdates(
-  locale: string,
+  locale?: string,
   limit = 5,
-  sourcePages: PageContent[] = getIndexablePages(),
+  fallback: PageContent[] = [],
 ): PageContent[] {
-  if (limit <= 0) return [];
-
-  return sourcePages
-    .filter(
-      (page) =>
-        page.locale === locale &&
-        page.pageType !== "home" &&
-        page.pageType !== "faq" &&
-        page.pageType !== "site" &&
-        page.routeKind !== "tool",
-    )
+  const source = fallback.length > 0 ? fallback : pages;
+  const reviewed = source
+    .filter((page) => (locale ? page.locale === locale : true))
+    .filter((page) => page.routeKind !== "home")
+    .filter((page) => page.pageType !== "site" && page.pageType !== "faq")
     .sort((left, right) => {
-      if (left.lastReviewed !== right.lastReviewed) {
-        return left.lastReviewed < right.lastReviewed ? 1 : -1;
-      }
-      return compareUrls(left, right);
-    })
-    .slice(0, limit);
+      const dateDiff = right.lastReviewed.localeCompare(left.lastReviewed);
+      if (dateDiff !== 0) return dateDiff;
+      return left.id.localeCompare(right.id);
+    });
+  return reviewed.slice(0, limit);
 }

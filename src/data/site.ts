@@ -53,7 +53,7 @@ export const site: SiteConfig = {
       },
     },
   ],
-  author: "Template Game Guide",
+  author: "Rivage Pre-Launch Reference Hub",
   gaMeasurementId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "",
   bingSiteAuthCode: process.env.NEXT_PUBLIC_BING_SITE_AUTH_CODE || "",
   officialSources: [
