@@ -32,3 +32,11 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 - Content changed: All page copy anchored to the Steam store page, SteamDB listing, and Steam Community hub as of 2026-09-22. Unannounced areas (PS5, Xbox, Switch, demo, system requirements, Steam Deck verification) are flagged rather than guessed.
 - Ad baseline: Fixed Adsterra-ready modules are present and disabled; no ad markup or request is emitted. Only `adsterra-integrator` may populate the six Adsterra unit values after registry activation.
 - Verification: `npm run verify` (typecheck + lint + validate:template + validate:content + validate:indexnow + build + validate:rendered-seo) passed; V3 route contract validation passed; public-content-hygiene-check passed.
+
+### 2026-09-28 - Adsterra six-unit integration
+
+- Task: Populate the fixed six Adsterra units (Native Banner, Banner 728x90, Banner 468x60, Banner 320x50, Banner 160x600, Smartlink) for `rivagegame.xyz` after registry activation.
+- Files changed: `src/data/ads.ts`.
+- URLs affected: No URL or layout changes; only the previously empty six ad values were populated with real Adsterra code per the fixed-ad contract.
+- Ad baseline: All six units are now populated and the shared `src/data/ads.ts` config drives them; no other ad components or page layouts were touched.
+- Verification: `npm run verify` to be re-run after the change.
