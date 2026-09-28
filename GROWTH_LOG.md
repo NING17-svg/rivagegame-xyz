@@ -40,3 +40,12 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 - URLs affected: No URL or layout changes; only the previously empty six ad values were populated with real Adsterra code per the fixed-ad contract.
 - Ad baseline: All six units are now populated and the shared `src/data/ads.ts` config drives them; no other ad components or page layouts were touched.
 - Verification: `npm run verify` to be re-run after the change.
+
+### 2026-09-29 - Demo availability and walkthrough Parts 1-4 refresh
+
+- Task: Correct the Rivage demo status from unconfirmed to confirmed standalone demo on Steam (AppID 4465080), and replace the pre-launch walkthrough framework with a Parts 1-4 plus Chess Board endgame structure with concrete puzzle access steps.
+- Files changed: `src/data/pages/page_demo.ts`, `src/data/pages/page_walkthrough.ts`, `src/data/pages/page_guides_hub.ts`, `src/data/pages/home.ts`, `src/data/faq.ts`, `CONTENT_INDEX.md`.
+- URLs affected: `/demo`, `/guides/walkthrough`, `/guides`, `/`; FAQ answers for `demo-1` to `demo-4`, `home-3`, and `walkthrough-1` to `walkthrough-4` updated to match.
+- Content changed: `/demo` now points at the live Rivage Demo store page (AppID 4465080), flags the April 16, 2026 release, Steam Next Fest and Cerebral Puzzle Showcase participation, the no-save-carryover rule, and the regional storefront mirrors. `/guides/walkthrough` is now organized into Parts 1-4 plus the Chess Board endgame, each with the concrete puzzle access steps (Pod Bay Stardust login + barcode, Garage Chain Rail Detector + Star Map + Cubik Cube, Rafael's Computer + Emergency Pharmacy + map.pic, Wooden Clock cogs + Constellation Controls, Chess Board + Jahi's Room safe) and the randomized-code caveat for the Wooden Clock cogs and Chess Board solution.
+- Cross-links: homepage demo block, demo `keyFacts`, guides hub progression-stage block, and walkthrough anchor structure updated; no IA change beyond what the task lists.
+- Verification: `npm run verify` re-run after the change.

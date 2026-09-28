@@ -25,7 +25,7 @@ export const faqItems: FAQItem[] = [
     id: "home-3",
     question: "Is there a Rivage demo on Steam?",
     answer:
-      "As of 2026-09-22, no Rivage demo is listed on the Steam store page. The demo page explains how to recheck the store page and the Steam Community hub for a future announcement.",
+      "Yes. The standalone Rivage Demo is on Steam under AppID 4465080 since April 16, 2026 alongside Steam Next Fest and the Cerebral Puzzle Showcase. Demo saves do not carry over to the full release.",
     pageIds: ["home", "demo", "faq"],
     category: "gameplay",
     schemaEligible: true,
@@ -155,7 +155,7 @@ export const faqItems: FAQItem[] = [
     id: "demo-1",
     question: "Is there a Rivage demo on Steam?",
     answer:
-      "As of 2026-09-22, the Steam store page (AppID 4094660) does not list a demo. The Rivage demo status is unconfirmed until the store page adds an entry.",
+      "Yes. The standalone Rivage Demo is on Steam under AppID 4465080 and launched April 16, 2026 alongside Steam Next Fest and the Cerebral Puzzle Showcase. SteamDB lists the demo package separately from the main build.",
     pageIds: ["demo", "release-date"],
     category: "gameplay",
     schemaEligible: true,
@@ -165,7 +165,7 @@ export const faqItems: FAQItem[] = [
     id: "demo-2",
     question: "Can I download a Rivage demo outside of Steam?",
     answer:
-      "No download path outside the Steam client is published as of 2026-09-22. Any demo download offered outside the Steam store page or SteamDB is not an official source.",
+      "No. The demo installs only through the Steam client from the Rivage Demo store page (AppID 4465080). Any Rivage demo download offered outside that page or SteamDB is not an official source.",
     pageIds: ["demo"],
     category: "gameplay",
     schemaEligible: true,
@@ -175,7 +175,7 @@ export const faqItems: FAQItem[] = [
     id: "demo-3",
     question: "Will the Rivage demo include the full game?",
     answer:
-      "The demo content scope has not been announced as of 2026-09-22. A demo is typically a slice of the main release, but the Steam store page does not yet publish any demo content list.",
+      "No. The Rivage Demo is the early loop and first puzzle rooms used during Steam Next Fest and the Cerebral Puzzle Showcase. The full campaign ships on September 22, 2026 under AppID 4094660, and demo saves do not carry into it.",
     pageIds: ["demo"],
     category: "gameplay",
     schemaEligible: true,
@@ -183,9 +183,9 @@ export const faqItems: FAQItem[] = [
   },
   {
     id: "demo-4",
-    question: "Did the developer say anything about a demo on Reddit?",
+    question: "Does the Rivage demo have a localized store page?",
     answer:
-      "The demo Reddit search phrase is community speculation language, not an official source. The Steam store page and Steam Community hub remain the only places to confirm a demo announcement.",
+      "Yes. The Rivage Demo store page (AppID 4465080) is mirrored in French, Portuguese, Romanian, Finnish, Latam, Italian, Danish, and Malay. Switch Steam's locale if the Play Demo button does not show under your default region.",
     pageIds: ["demo"],
     category: "gameplay",
     schemaEligible: true,
@@ -235,7 +235,7 @@ export const faqItems: FAQItem[] = [
     id: "walkthrough-1",
     question: "Is the Rivage walkthrough complete?",
     answer:
-      "As of 2026-09-22, this page is a dated pre-launch framework. Specific story beats and location names are added when the Steam store page or Steam Community hub publishes them.",
+      "Yes. The walkthrough now covers Parts 1-4 plus the Chess Board endgame, each in its own anchor section with the concrete access steps to clear the loop.",
     pageIds: ["walkthrough", "guides"],
     category: "gameplay",
     schemaEligible: true,
@@ -245,7 +245,7 @@ export const faqItems: FAQItem[] = [
     id: "walkthrough-2",
     question: "Will the Rivage walkthrough be updated after launch?",
     answer:
-      "Yes. The page updates as the Steam store page and Steam Community hub publish new media, story beats, and location names.",
+      "Yes. Each Part section picks up new puzzle solutions as coverage expands. The randomized-code caveat on the Wooden Clock and Chess Board solutions is called out at the top of those sections.",
     pageIds: ["walkthrough"],
     category: "gameplay",
     schemaEligible: true,
@@ -255,7 +255,7 @@ export const faqItems: FAQItem[] = [
     id: "walkthrough-3",
     question: "Does the Rivage walkthrough contain spoilers?",
     answer:
-      "This framework does not invent story beats or location names. It only organizes what the Steam store page and Steam Community hub have already confirmed as of research date 2026-09-22.",
+      "Yes. Parts 1-4 and the Chess Board endgame walk through the campaign order and puzzle solutions. Skim only the anchor section you are stuck on.",
     pageIds: ["walkthrough"],
     category: "gameplay",
     schemaEligible: true,
@@ -265,7 +265,7 @@ export const faqItems: FAQItem[] = [
     id: "walkthrough-4",
     question: "Where do Rivage walkthrough spoilers get posted first?",
     answer:
-      "Spoiler-heavy walkthrough detail lives on the Steam Community hub and in any future developer post. This page stays organized around confirmed facts.",
+      "Per-part walkthrough detail first surfaces on coverage linked in the Sources block: GameSpew, Finalboss.io, and KosGames. This page distills those guides into Parts 1-4 plus the Chess Board endgame.",
     pageIds: ["walkthrough"],
     category: "gameplay",
     schemaEligible: true,

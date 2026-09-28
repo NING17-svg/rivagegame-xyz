@@ -30,9 +30,9 @@ export const page_guides_hub: PageContent = {
   keyFacts: [
     { label: "Page type", value: "hub" },
     { label: "Beginner stage", value: "First-session systems and resources" },
-    { label: "Progression stage", value: "Dated walkthrough framework" },
-    { label: "Source rule", value: "Steam store page + Steam Community hub" },
-    { label: "Last reviewed", value: "2026-09-22" },
+    { label: "Progression stage", value: "Parts 1-4 + Chess Board walkthrough" },
+    { label: "Source rule", value: "Steam store page + Rivage coverage" },
+    { label: "Last reviewed", value: "2026-09-29" },
   ],
   modules: [
     {
@@ -52,9 +52,9 @@ export const page_guides_hub: PageContent = {
     {
       id: "progression-stage",
       type: "prose",
-      heading: "Progression Stage: Rivage Walkthrough",
+      heading: "Progression Stage: Rivage Walkthrough (Parts 1-4 + Chess Board)",
       body:
-        "The Rivage walkthrough is the longer progression guide. It is built around the Rivage core loop phrase used on the Steam store page and around the Rivage genre tags already published. Because Rivage has not launched as of 2026-09-22, the Rivage walkthrough is written as a dated pre-launch framework rather than a step by step spoiler guide.",
+        "The Rivage walkthrough is now organized into Parts 1-4 plus the Chess Board endgame. Each Part covers the rooms you visit and the puzzle chain you solve to keep K9 and the loop moving: Part 1 (Miranda's laptop and the Pod Bay Stardust login), Part 2 (the Garage Chain Rail Detector with the Star Map and Cubik Cube), Part 3 (Rafael's Computer and the Emergency Pharmacy), Part 4 (the Wooden Clock cogs and Constellation Controls), and the endgame Chess Board solution with the Jahi's Room safe. Jump straight to the Part you are stuck on using the anchor links in the walkthrough.",
     },
     {
       id: "exploration-stage",
@@ -76,7 +76,7 @@ export const page_guides_hub: PageContent = {
       heading: "Related Pages",
       body: "Cross-reference the launch pages that match each link target.",
       links: [
-        { label: "Rivage walkthrough", href: "/guides/walkthrough/", description: "Step-by-step Rivage walkthrough covering the Rivage core loop and Rivage progression milestones as a dated pre-launch framework." },
+        { label: "Rivage walkthrough", href: "/guides/walkthrough/", description: "Rivage walkthrough organized into Parts 1-4 plus the Chess Board endgame, each with concrete puzzle access steps." },
         { label: "Rivage beginner guide", href: "/guides/beginner/", description: "First-time Rivage beginner guidance covering Rivage core systems and Rivage early progression priorities." },
         { label: "Rivage core gameplay and genre", href: "/gameplay/", description: "Summarizes the Rivage genre tag and the Rivage core loop described on the Rivage Steam store page." },
         { label: "Rivage release date and launch status", href: "/release-date/", description: "Confirms the Rivage September 22, 2026 Steam release date and the Rivage launch stage status as of 2026-09-22." },

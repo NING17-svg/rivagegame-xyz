@@ -16,9 +16,9 @@ hreflang, sitemap, and route-manifest validation.
 | `/release-date` | `src/data/pages/page_release_date.ts` | Guide | Rivage release date | Confirm the Rivage Steam launch date | Platforms / FAQ | Supporting hub | Tied to Steam store page for AppID 4094660. |
 | `/platforms` | `src/data/pages/page_platforms.ts` | Guide | Rivage platforms | Check Rivage console and PC platform status | Release Date / FAQ | Supporting hub | Flags PS5/Xbox/Switch/Deck status as unconfirmed. |
 | `/system-requirements` | `src/data/pages/page_system_requirements.ts` | Guide | Rivage PC system requirements | Check Rivage PC spec status | Platforms / FAQ | Supporting | Notes that store page has not published spec rows. |
-| `/demo` | `src/data/pages/page_demo.ts` | Guide | Rivage demo | Confirm Rivage demo status | Release Date / FAQ | Supporting | Demo not confirmed as of 2026-09-22. |
+| `/demo` | `src/data/pages/page_demo.ts` | Guide | Rivage demo | Confirm Rivage demo status | Release Date / FAQ | Supporting | Standalone Rivage Demo on Steam (AppID 4465080) since April 16, 2026; saves do not carry over. |
 | `/guides` | `src/data/pages/page_guides_hub.ts` | Guide | Rivage guides | Browse Rivage beginner, walkthrough, progression guides | Beginner Guide / Walkthrough | Hub | Card-grid hub shell. |
-| `/guides/walkthrough` | `src/data/pages/page_walkthrough.ts` | Guide | Rivage walkthrough | Read the dated Rivage walkthrough framework | Beginner Guide / Gameplay | Supporting | Pre-launch framework, no invented beats. |
+| `/guides/walkthrough` | `src/data/pages/page_walkthrough.ts` | Guide | Rivage walkthrough | Read the Parts 1-4 plus Chess Board endgame walkthrough | Beginner Guide / Gameplay | Supporting | Anchor sections per Part plus Chess Board endgame with randomized-code caveat. |
 | `/guides/beginner` | `src/data/pages/page_beginner_guide.ts` | Guide | Rivage beginner guide | Read first-session Rivage systems | Walkthrough / Gameplay | Supporting | Anchored to Steam store page genre tags. |
 | `/gameplay` | `src/data/pages/page_gameplay_overview.ts` | Guide | Rivage gameplay | Read Rivage genre and core loop summary | Guides / FAQ | Supporting | Steam store description is the only source. |
 | `/trailer` | `src/data/pages/page_trailer_and_media.ts` | Guide | Rivage trailer | Locate official Rivage trailer and gameplay footage | Release Date / FAQ | Supporting | Steam store page + Steam Community hub. |
@@ -51,7 +51,6 @@ hreflang, sitemap, and route-manifest validation.
 
 ## Open Questions
 
-- Rivage PS5, Xbox, and Nintendo Switch release status — unannounced as of 2026-09-22.
-- Rivage demo on Steam — unconfirmed as of 2026-09-22.
-- Rivage PC minimum and recommended system requirements — not published on the store page as of 2026-09-22.
-- Rivage Steam Deck verification status — unconfirmed as of 2026-09-22.
+- Rivage PS5, Xbox, and Nintendo Switch release status — unannounced as of 2026-09-29.
+- Rivage PC minimum and recommended system requirements — not published on the store page as of 2026-09-29.
+- Rivage Steam Deck verification status — unconfirmed as of 2026-09-29.

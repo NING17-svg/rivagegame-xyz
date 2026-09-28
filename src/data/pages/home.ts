@@ -32,7 +32,7 @@ export const homePage: PageContent = {
     { label: "Steam AppID", value: "4094660" },
     { label: "Planned release", value: "September 22, 2026" },
     { label: "Launch platforms", value: "Steam (PC, Windows)" },
-    { label: "Demo", value: "Not confirmed as of 2026-09-22" },
+    { label: "Demo", value: "Available on Steam (AppID 4465080)" },
     { label: "Steam Deck", value: "Verification unconfirmed" },
   ],
   modules: [
@@ -69,7 +69,7 @@ export const homePage: PageContent = {
       type: "prose",
       heading: "Demo, System Requirements, and Trailer Next Steps",
       body:
-        "A demo on Steam is not confirmed as of 2026-09-22. The demo page explains where to check the store page and the Steam Community hub for any future announcement. System requirements have not been published on the store page; the system requirements page records that fact and flags Steam Deck verification status as unconfirmed. For media, the trailer and gameplay footage live on the trailer page, which links to the Steam store media block and the Steam Community hub.",
+        "A standalone Rivage Demo is on Steam under AppID 4465080 since April 16, 2026 alongside Steam Next Fest and the Cerebral Puzzle Showcase; demo saves do not carry over to the full release. System requirements have not been published on the store page; the system requirements page records that fact and flags Steam Deck verification status as unconfirmed. For media, the trailer and gameplay footage live on the trailer page, which links to the Steam store media block and the Steam Community hub.",
     },
     {
       id: "internal-links",
@@ -81,7 +81,7 @@ export const homePage: PageContent = {
         { label: "Rivage platforms at launch", href: "/platforms/", description: "Lists Rivage platform status (Steam confirmed; PS5, Xbox, Switch not announced as of 2026-09-22)." },
         { label: "Browse the Rivage guides hub", href: "/guides/", description: "Indexes the Rivage beginner guide, Rivage walkthrough, and Rivage progression guides for new Rivage players." },
         { label: "Rivage core gameplay and genre", href: "/gameplay/", description: "Summarizes the Rivage genre tag and core loop described on the Rivage Steam store page." },
-        { label: "Is there a Rivage demo?", href: "/demo/", description: "Records Rivage demo status (not confirmed as of 2026-09-22) and the Steam download path to recheck." },
+        { label: "Is there a Rivage demo?", href: "/demo/", description: "Confirms the standalone Rivage Demo on Steam (AppID 4465080), the April 16, 2026 release, and the no-save-carryover rule." },
         { label: "Rivage PC system requirements", href: "/system-requirements/", description: "Notes that Rivage minimum and recommended PC specs have not been published on the Steam store page as of 2026-09-22." },
       ],
     },
@@ -116,7 +116,7 @@ export const homePage: PageContent = {
       type: "prose",
       heading: "Fact Boundaries",
       body:
-        "Confirmed current-game facts: Rivage is the first Steam release under the Rivage title (AppID 4094660), Rivage planned release date is September 22, 2026, and Rivage at launch is Steam only on PC per the Steam store page and SteamDB listing checked on 2026-09-22. Unannounced as of 2026-09-22: Rivage console versions on PS5, Xbox, and Nintendo Switch; Rivage demo on Steam; Rivage PC minimum and recommended system requirements; Rivage Steam Deck verification status. Explicitly excluded non-game Rivage namesakes: Rivage day spa (Birmingham), Rivage Oak Kitchen (Sioux Falls), Rivage apartments (Acton MA), Beau Rivage hotel and casino, Le Rivage (NYC restaurant), Yamaha Rivage PM-series digital mixing consoles, Villa Rivage, Mon Rivage, Club Rivage, Rivage landscaping, and Rivage bal harbour.",
+        "Confirmed current-game facts: Rivage is the first Steam release under the Rivage title (AppID 4094660), Rivage planned release date is September 22, 2026, Rivage at launch is Steam only on PC, and a standalone Rivage Demo is on Steam under AppID 4465080 since April 16, 2026. Demo saves do not carry over to the full release. Unannounced as of 2026-09-29: Rivage console versions on PS5, Xbox, and Nintendo Switch; Rivage PC minimum and recommended system requirements; Rivage Steam Deck verification status. Explicitly excluded non-game Rivage namesakes: Rivage day spa (Birmingham), Rivage Oak Kitchen (Sioux Falls), Rivage apartments (Acton MA), Beau Rivage hotel and casino, Le Rivage (NYC restaurant), Yamaha Rivage PM-series digital mixing consoles, Villa Rivage, Mon Rivage, Club Rivage, Rivage landscaping, and Rivage bal harbour.",
     },
   ],
   faqIds: ["home-1", "home-2", "home-3", "home-4"],
