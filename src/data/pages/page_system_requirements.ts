@@ -92,4 +92,4 @@ export const page_system_requirements: PageContent = {
   ],
   "sourceStatus": "official",
   "lastReviewed": "2026-09-22"
-};
+}

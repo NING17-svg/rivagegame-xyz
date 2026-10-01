@@ -92,4 +92,4 @@ export const page_trailer_and_media: PageContent = {
   ],
   "sourceStatus": "official",
   "lastReviewed": "2026-09-22"
-};
+}

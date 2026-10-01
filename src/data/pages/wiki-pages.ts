@@ -71,4 +71,4 @@ export const wikiPages: PageContent[] = [
     "sourceStatus": "internal",
     "lastReviewed": "2026-09-22"
   }
-];
+]

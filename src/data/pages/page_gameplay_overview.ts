@@ -103,4 +103,4 @@ export const page_gameplay_overview: PageContent = {
   ],
   "sourceStatus": "official",
   "lastReviewed": "2026-09-22"
-};
+}

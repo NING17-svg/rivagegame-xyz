@@ -104,4 +104,4 @@ export const page_beginner_guide: PageContent = {
   ],
   "sourceStatus": "official",
   "lastReviewed": "2026-09-22"
-};
+}
