@@ -37,10 +37,6 @@ export const page_demo: PageContent = {
   "quickAnswer": "Yes. A standalone Rivage Demo is on Steam under AppID 4465080. It launched April 16, 2026 alongside Steam Next Fest and the Cerebral Puzzle Showcase, with localized store pages in French, Portuguese, Romanian, Finnish, Latam, Italian, Danish, and Malay. SteamDB lists the demo package separately from the main build (AppID 4094660). Demo saves do not carry over to the full release.",
   "keyFacts": [
     {
-      "label": "Page type",
-      "value": "status"
-    },
-    {
       "label": "Demo entry",
       "value": "Available on Steam (AppID 4465080)"
     },

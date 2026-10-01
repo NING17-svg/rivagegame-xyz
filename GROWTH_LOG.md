@@ -17,6 +17,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-10-01 - The guides hub Quick Answer module reduced, and the page-type label unpublished
+
+- Task: Stop the authoring pipeline's own page-type label from being published as a reader-facing fact, and remove the last Quick Answer module that repeated its page's Quick Answer.
+- Copy changed: Eight pages listed "Page type: hub / guide / reference / explanation / status" as a Key Fact. That is the pipeline's label for the page, not a fact about Rivage, and it sat at the top of the fold above the real facts. It is removed. The remaining Key Facts on those pages (Source rule, Pre-launch framework, Demo entry, platform list, Structure, Genre tags, stage summaries, Last reviewed) are unchanged.
+- Changed: `/guides` opened with a "Quick Answer" prose module whose body was the page's Quick Answer field plus one sentence the field did not carry -- that the hub promises no third-party Rivage wiki. The duplicated sentences are removed and the module is retitled "What this hub sources from", so the page keeps the one claim no sibling makes and no longer prints the same paragraph twice. The `puzzle-entries` entity-grid added by the V4 trial above is untouched and remains the hub's entry-point block.
+- Interaction with the V4 trial: the same V4 commit had already replaced the duplicated modules on `/guides/beginner` and `/gameplay` with "What this guide covers" and "Scope of this overview", reaching the same conclusion by keeping the one non-duplicated sentence rather than deleting the module. Those two pages are left as that commit made them; this change is rebased on top of it, not applied over it.
+- URLs affected: None. No title, H1, canonical, page type, keyword, CTA or internal-link role changed, so `CONTENT_INDEX.md` is not revised.
+- Verification: `npm run verify` (typecheck, lint, template, content, IndexNow, static export, rendered SEO, reading checks for 16 pages / 16 sitemap URLs / 16 manifest routes) passes, the render-quality audit reports 0 findings across all 16 pages, and a sweep of the exported HTML finds no unrendered Markdown link and no "Page type" label.
+
 ### 2026-10-01 - Public page render-quality repair
 
 - Task: Repair the homepage and inner pages so the first screen carries a positioning line, key facts and priority entry points, and so authoring-pipeline artifacts never reach a public page.

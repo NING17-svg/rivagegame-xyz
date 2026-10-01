@@ -37,10 +37,6 @@ export const page_gameplay_overview: PageContent = {
   "quickAnswer": "Rivage gameplay is described on the Steam store page (AppID 4094660) using the genre tags and the core loop phrase the developer published there. As of research date 2026-09-22, the Steam store page is the only confirmed source for Rivage gameplay wording, with the Steam Community hub adding community context.",
   "keyFacts": [
     {
-      "label": "Page type",
-      "value": "explanation"
-    },
-    {
       "label": "Source rule",
       "value": "Steam store page + Steam Community hub"
     },

@@ -33,10 +33,6 @@ export const page_guides_hub: PageContent = {
   "quickAnswer": "Choose a puzzle or chapter below to jump to its answer in the walkthrough. The beginner guide covers your first session and the gameplay overview explains the core systems.",
   "keyFacts": [
     {
-      "label": "Page type",
-      "value": "hub"
-    },
-    {
       "label": "Beginner stage",
       "value": "First-session systems and resources"
     },
@@ -91,11 +87,11 @@ export const page_guides_hub: PageContent = {
         }
       ]
     },
-    {
-      "id": "quick-answer",
+        {
+      "id": "source-rule",
       "type": "prose",
-      "heading": "Quick Answer",
-      "body": "The Rivage guides hub indexes the Rivage beginner guide, the Rivage walkthrough, and the Rivage progression guides by stage. New Rivage players start at the Rivage beginner guide for first-session systems and then move to the Rivage walkthrough for longer progression milestones. The Rivage guides hub links only to Rivage first-party sources and does not promise a third party Rivage wiki."
+      "heading": "What this hub sources from",
+      "body": "Every Rivage guide on this hub is written from the Rivage Steam store page and the Rivage Steam Community hub. The hub does not promise a third-party Rivage wiki, and it does not carry guide coverage that no first-party source supports."
     },
     {
       "id": "beginner-stage",

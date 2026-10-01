@@ -33,10 +33,6 @@ export const page_beginner_guide: PageContent = {
   "quickAnswer": "The Rivage beginner guide on this page is a dated day-one framework because the game has not launched. It organizes what the Steam store page and Steam Community hub already confirm about the core loop, the resource flow, and the early progression priorities a first-time player should expect.",
   "keyFacts": [
     {
-      "label": "Page type",
-      "value": "guide"
-    },
-    {
       "label": "Source rule",
       "value": "Steam store page + Steam Community hub"
     },

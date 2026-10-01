@@ -33,10 +33,6 @@ export const page_trailer_and_media: PageContent = {
   "quickAnswer": "The Rivage trailer and any official gameplay footage live on the Steam store page (AppID 4094660) and the Steam Community hub., the Steam store page is the canonical source for trailer links and media assets.",
   "keyFacts": [
     {
-      "label": "Page type",
-      "value": "reference"
-    },
-    {
       "label": "Source rule",
       "value": "Steam store page + SteamDB"
     },

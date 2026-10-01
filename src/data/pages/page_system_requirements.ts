@@ -33,10 +33,6 @@ export const page_system_requirements: PageContent = {
   "quickAnswer": "As of 2026-09-22, the Rivage Steam store page (AppID 4094660) has not published Rivage PC minimum or recommended system requirements. The Rivage Steam Deck verification status is also unconfirmed as of research date 2026-09-22. When the Rivage developer or Rivage publisher publishes Rivage system requirements on the Rivage Steam store page or on SteamDB, this Rivage system requirements page is the place they are recorded.",
   "keyFacts": [
     {
-      "label": "Page type",
-      "value": "reference"
-    },
-    {
       "label": "Source rule",
       "value": "Steam store page only"
     },

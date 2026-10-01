@@ -33,10 +33,6 @@ export const page_platforms: PageContent = {
   "quickAnswer": "Rivage platforms at launch are Steam only on PC for Windows. The Steam store page for AppID 4094660 and the SteamDB listing confirm Windows as the only platform flag as of research date 2026-09-22. As of that date, the developer has not announced a release on PlayStation 5, Xbox Series, or Nintendo Switch.",
   "keyFacts": [
     {
-      "label": "Page type",
-      "value": "reference"
-    },
-    {
       "label": "Steam store",
       "value": "Confirmed (PC, Windows)"
     },

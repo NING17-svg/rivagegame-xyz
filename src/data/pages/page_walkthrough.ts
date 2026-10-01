@@ -37,10 +37,6 @@ export const page_walkthrough: PageContent = {
   "quickAnswer": "Choose Parts 1–4 or the Chess Board in the contents below. The Wooden Clock codes and Chess Board arrangement vary between runs: follow your own clues, not screenshot numbers.",
   "keyFacts": [
     {
-      "label": "Page type",
-      "value": "guide"
-    },
-    {
       "label": "Structure",
       "value": "Parts 1-4 + Chess Board endgame"
     },
