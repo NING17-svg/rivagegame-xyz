@@ -15,14 +15,17 @@
     "indexnow:setup": "tsx scripts/indexnow.ts setup",
     "indexnow:submit": "tsx scripts/indexnow.ts submit",
     "routes:manifest": "tsx scripts/print-route-manifest.ts",
-    "verify": "npm run typecheck && npm run lint && npm run validate:template && npm run validate:content && npm run validate:indexnow && npm run build && npm run validate:rendered-seo",
+    "verify": "npm run typecheck && npm run lint && npm run validate:template && npm run validate:content && npm run validate:render && npm run validate:indexnow && npm run build && npm run validate:rendered-seo && npm run validate:reading",
     "preview": "npm run build && wrangler dev",
-    "validate:render": "tsx scripts/validate-render-integrity.ts"
+    "validate:render": "tsx scripts/validate-render-integrity.ts",
+    "validate:reading": "tsx --tsconfig scripts/tsconfig.tests.json scripts/test-reading-layout.tsx"
   },
   "dependencies": {
     "next": "15.5.18",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

@@ -3,16 +3,22 @@ import { site } from "@/data/site";
 export interface LocalizedNavigationItem {
   href: string;
   labels: Record<string, string>;
+  children?: LocalizedNavigationItem[];
 }
 
 export const primaryNavigation: LocalizedNavigationItem[] = [
-  { href: "/release-date", labels: { "en-US": "Release Date" } },
-  { href: "/platforms", labels: { "en-US": "Platforms" } },
+  { href: "/guides", labels: { "en-US": "Guides" }, children: [
+    { href: "/guides/walkthrough", labels: { "en-US": "Parts 1–4 walkthrough" } },
+    { href: "/guides/beginner", labels: { "en-US": "Beginner guide" } },
+  ] },
+  { href: "/gameplay", labels: { "en-US": "Game information" }, children: [
+    { href: "/release-date", labels: { "en-US": "Release date" } },
+    { href: "/platforms", labels: { "en-US": "Platforms" } },
+    { href: "/system-requirements", labels: { "en-US": "PC requirements" } },
+    { href: "/trailer", labels: { "en-US": "Trailer" } },
+  ] },
   { href: "/demo", labels: { "en-US": "Demo" } },
-  { href: "/guides", labels: { "en-US": "Guides" } },
-  { href: "/gameplay", labels: { "en-US": "Gameplay" } },
-  { href: "/system-requirements", labels: { "en-US": "System Requirements" } },
-  { href: "/trailer", labels: { "en-US": "Trailer" } },
+  { href: "/faq", labels: { "en-US": "FAQ" } },
 ];
 
 export const footerNavigation: LocalizedNavigationItem[] = [

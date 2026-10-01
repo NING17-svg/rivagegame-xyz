@@ -21,20 +21,16 @@ export const page_guides_hub: PageContent = {
     "subtitle": "Start at the Rivage beginner guide for first-session systems and move into the Rivage walkthrough for longer progression milestones.",
     "ctas": [
       {
-        "label": "Beginner Guide",
-        "href": "/guides/beginner"
-      },
-      {
-        "label": "Walkthrough",
+        "label": "Full walkthrough",
         "href": "/guides/walkthrough"
       },
       {
-        "label": "Gameplay Overview",
-        "href": "/gameplay"
+        "label": "Beginner guide",
+        "href": "/guides/beginner"
       }
     ]
   },
-  "quickAnswer": "The Rivage guides hub indexes the Rivage beginner guide, the Rivage walkthrough, and the Rivage progression guides by stage. New Rivage players start at the Rivage beginner guide for first-session systems and then move to the Rivage walkthrough for longer progression milestones.",
+  "quickAnswer": "Choose a puzzle or chapter below to jump to its answer in the walkthrough. The beginner guide covers your first session and the gameplay overview explains the core systems.",
   "keyFacts": [
     {
       "label": "Page type",
@@ -58,6 +54,43 @@ export const page_guides_hub: PageContent = {
     }
   ],
   "modules": [
+    {
+      "id": "puzzle-entries",
+      "type": "entity-grid",
+      "heading": "Where are you stuck?",
+      "items": [
+        {
+          "title": "Part 1: Pod Bay",
+          "summary": "Miranda’s laptop and the Stardust login",
+          "href": "/guides/walkthrough#part-1"
+        },
+        {
+          "title": "Part 2: Garage",
+          "summary": "Chain Rail Detector, Star Map and Cubik Cube",
+          "href": "/guides/walkthrough#part-2"
+        },
+        {
+          "title": "Part 3: Pharmacy",
+          "summary": "Rafael’s Computer, keycard and map.pic",
+          "href": "/guides/walkthrough#part-3"
+        },
+        {
+          "title": "Part 4: Wooden Clock",
+          "summary": "Cogs, Sun Box and Constellation Controls",
+          "href": "/guides/walkthrough#part-4"
+        },
+        {
+          "title": "Chess Board endgame",
+          "summary": "Tarot Cards and Jahi’s Room safe",
+          "href": "/guides/walkthrough#chess-board"
+        },
+        {
+          "title": "First time playing?",
+          "summary": "Start with the beginner guide and core systems.",
+          "href": "/guides/beginner"
+        }
+      ]
+    },
     {
       "id": "quick-answer",
       "type": "prose",
@@ -108,4 +141,4 @@ export const page_guides_hub: PageContent = {
   ],
   "sourceStatus": "official",
   "lastReviewed": "2026-09-22"
-}
+};

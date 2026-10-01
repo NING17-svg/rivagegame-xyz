@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { AdSlot } from "@/components/ads/AdSlot";
+import { PageContents } from "@/components/content/PageContents";
 import { KeyFacts } from "@/components/content/KeyFacts";
 import { getRelatedPages } from "@/lib/content";
 import type { PageContent } from "@/types/content";
@@ -9,30 +10,10 @@ export function RightRail({ page }: { page: PageContent }) {
 
   return (
     <aside className="right-rail" aria-label="Page summary">
+      <PageContents page={page} />
       <section>
         <h2>Key Facts</h2>
         <KeyFacts facts={page.keyFacts} />
-      </section>
-      <section>
-        <h2>On This Page</h2>
-        <nav className="rail-links" aria-label="Section navigation">
-          {page.modules
-            .filter(
-              (guideModule) => guideModule.heading || guideModule.type === "callout",
-            )
-            .map((guideModule) => {
-              const label =
-                guideModule.type === "callout"
-                  ? guideModule.title
-                  : guideModule.heading;
-
-              return (
-                <a key={guideModule.id} href={`#${guideModule.id}`}>
-                  {label}
-                </a>
-              );
-            })}
-        </nav>
       </section>
       {related.length ? (
         <section>

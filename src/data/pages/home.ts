@@ -11,33 +11,25 @@ export const homePage: PageContent = {
   "presentation": {
     "shell": "home"
   },
-  "h1": "Rivage on Steam: Release Date, Platforms, and Guides Hub",
+  "h1": "Rivage guides & walkthrough",
   "seoTitle": "Rivage on Steam: Release Date, Platforms, and Guides Hub",
   "metaDescription": "Rivage releases on Steam Sep 22, 2026. Track Rivage launch status, confirm Rivage platforms, and browse Rivage guides, demo news, and Rivage PC requirements.",
   "summary": "Direct US English search users into the Rivage launch status, platforms, gameplay overview, and guides hub for the September 22, 2026 Steam release.",
   "hero": {
-    "eyebrow": "Rivage Pre-Launch Hub",
-    "subtitle": "Track Rivage launch status on Steam, confirm Rivage platforms, and follow Rivage guides, demo news, and Rivage PC requirements in one dated reference hub.",
+    "eyebrow": "Unofficial Rivage guide",
+    "subtitle": "Find the puzzle you are stuck on, follow its steps, and get back to your run.",
     "ctas": [
       {
-        "label": "Release Date",
-        "href": "/release-date"
+        "label": "Open walkthrough",
+        "href": "/guides/walkthrough"
       },
       {
-        "label": "Platforms",
-        "href": "/platforms"
-      },
-      {
-        "label": "Browse Guides",
-        "href": "/guides"
-      },
-      {
-        "label": "Steam Store",
-        "href": "https://store.steampowered.com/app/4094660"
+        "label": "Start with the basics",
+        "href": "/guides/beginner"
       }
     ]
   },
-  "quickAnswer": "Rivage is a first-time Steam release under AppID 4094660, planned for September 22, 2026 on PC. This hub tracks the official launch status, confirms the platforms at launch, and links to the gameplay overview, the guides hub, the demo status page, and the system requirements page so you can plan around launch day.",
+  "quickAnswer": "Use the chapter links on this page for Parts 1–4 and the Chess Board endgame. If you are new to Rivage, start with the beginner guide.",
   "keyFacts": [
     {
       "label": "Steam AppID",
@@ -61,6 +53,70 @@ export const homePage: PageContent = {
     }
   ],
   "modules": [
+    {
+      "id": "puzzle-entries",
+      "type": "entity-grid",
+      "heading": "Where are you stuck?",
+      "items": [
+        {
+          "title": "Part 1: Pod Bay",
+          "summary": "Miranda’s laptop and the Stardust login",
+          "href": "/guides/walkthrough#part-1"
+        },
+        {
+          "title": "Part 2: Garage",
+          "summary": "Chain Rail Detector, Star Map and Cubik Cube",
+          "href": "/guides/walkthrough#part-2"
+        },
+        {
+          "title": "Part 3: Pharmacy",
+          "summary": "Rafael’s Computer, keycard and map.pic",
+          "href": "/guides/walkthrough#part-3"
+        },
+        {
+          "title": "Part 4: Wooden Clock",
+          "summary": "Cogs, Sun Box and Constellation Controls",
+          "href": "/guides/walkthrough#part-4"
+        },
+        {
+          "title": "Chess Board endgame",
+          "summary": "Tarot Cards and Jahi’s Room safe",
+          "href": "/guides/walkthrough#chess-board"
+        },
+        {
+          "title": "First time playing?",
+          "summary": "Start with the beginner guide and core systems.",
+          "href": "/guides/beginner"
+        }
+      ]
+    },
+    {
+      "id": "game-info-entries",
+      "type": "entity-grid",
+      "heading": "Before you play",
+      "items": [
+        {
+          "title": "Demo and save transfer",
+          "summary": "Check the standalone demo and save limitations.",
+          "href": "/demo"
+        },
+        {
+          "title": "Platforms and PC requirements",
+          "summary": "Check platform availability and published specifications.",
+          "href": "/platforms"
+        },
+        {
+          "title": "Release information",
+          "summary": "Read the dated Steam release reference.",
+          "href": "/release-date"
+        },
+        {
+          "title": "Gameplay overview",
+          "summary": "A short overview of the game’s core systems.",
+          "href": "/gameplay"
+        }
+      ]
+    },
     {
       "id": "release-date-block",
       "type": "prose",
@@ -93,6 +149,8 @@ export const homePage: PageContent = {
     "home-4"
   ],
   "relatedPageIds": [
+    "walkthrough",
+    "beginner-guide",
     "release-date",
     "platforms",
     "guides",
@@ -107,4 +165,4 @@ export const homePage: PageContent = {
   ],
   "sourceStatus": "official",
   "lastReviewed": "2026-09-22"
-}
+};

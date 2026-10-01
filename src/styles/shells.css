@@ -268,3 +268,8 @@
     padding: 20px;
   }
 }
+
+/* Content pages spend their space on answers; home pages retain the game identity. */
+.content-hero { padding: 24px 0; border: 0; box-shadow: none; background: transparent; }
+.content-hero .hero-copy h1 { font-size: clamp(28px, 3.2vw, 40px); }
+.content-hero .hero-copy > p { max-width: 70ch; }

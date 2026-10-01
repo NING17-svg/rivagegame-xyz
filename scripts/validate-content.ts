@@ -4,6 +4,7 @@ import { faqItems } from "../src/data/faq";
 import { site } from "../src/data/site";
 import { getAllPages, getPageById } from "../src/lib/content";
 import { localizePath, normalizePath } from "../src/lib/localization";
+import { primaryNavigation, footerNavigation, type LocalizedNavigationItem } from "../src/data/navigation";
 import type { PageContent } from "../src/types/content";
 import { guideModuleTypes } from "../src/types/modules";
 
@@ -117,6 +118,18 @@ for (const page of pages) {
     }
   }
 }
+
+function validateNavigation(items: LocalizedNavigationItem[]) {
+  for (const item of items) {
+    for (const locale of site.locales) {
+      if (!item.labels[locale.code]?.trim()) fail(`navigation ${item.href} has no label for ${locale.code}`);
+      if (!urls.has(localizePath(item.href, locale.code))) fail(`navigation target is missing: ${item.href} (${locale.code})`);
+    }
+    if (item.children?.length) validateNavigation(item.children);
+  }
+}
+validateNavigation(primaryNavigation);
+validateNavigation(footerNavigation);
 
 for (const faq of faqItems) {
   if (!faq.question || !faq.answer) fail(`FAQ ${faq.id} is missing question or answer`);

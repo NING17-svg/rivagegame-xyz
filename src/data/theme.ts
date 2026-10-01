@@ -38,7 +38,7 @@ export const theme = {
     hoverLift: "2px",
   },
   density: "comfortable",
-  background: { mode: "gradient", overlay: 0, position: "top center" },
+  background: { mode: "solid", overlay: 0, position: "top center" },
   variants: {
     home: "split-panel",
     hub: "card-grid",

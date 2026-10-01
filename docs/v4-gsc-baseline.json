@@ -1,0 +1,151 @@
+{
+  "status": "observed",
+  "period": {
+    "clicks": 1,
+    "impressions": 98,
+    "ctr": 0.010204,
+    "position": 7.1837
+  },
+  "comparison": null,
+  "daily": [
+    {
+      "date": "2026-09-28",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0.0,
+      "position": 6.619
+    },
+    {
+      "date": "2026-09-29",
+      "clicks": 1,
+      "impressions": 77,
+      "ctr": 0.012987,
+      "position": 7.3377
+    }
+  ],
+  "top_pages": [
+    {
+      "page": "https://rivagegame.xyz/guides",
+      "clicks": 1,
+      "impressions": 54,
+      "ctr": 0.018519,
+      "position": 7.3148
+    },
+    {
+      "page": "http://rivagegame.xyz/",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0.0,
+      "position": 7.0
+    },
+    {
+      "page": "https://rivagegame.xyz/",
+      "clicks": 0,
+      "impressions": 31,
+      "ctr": 0.0,
+      "position": 8.3548
+    },
+    {
+      "page": "https://rivagegame.xyz/about",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0.0,
+      "position": 5.0
+    },
+    {
+      "page": "https://rivagegame.xyz/gameplay",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0.0,
+      "position": 7.7778
+    },
+    {
+      "page": "https://rivagegame.xyz/privacy-policy",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 10.0
+    }
+  ],
+  "top_queries": [
+    {
+      "query": "rivage guide",
+      "clicks": 1,
+      "impressions": 20,
+      "ctr": 0.05,
+      "position": 6.3
+    },
+    {
+      "query": "rivage",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0.0,
+      "position": 8.6667
+    },
+    {
+      "query": "rivage game",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 6.0
+    },
+    {
+      "query": "rivage game guide",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0.0,
+      "position": 6.5
+    },
+    {
+      "query": "rivage gameplay",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 6.0
+    },
+    {
+      "query": "rivage platforms",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 9.0
+    },
+    {
+      "query": "rivage steam",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0.0,
+      "position": 9.0909
+    },
+    {
+      "query": "rivage steam deck",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0.0,
+      "position": 9.3333
+    },
+    {
+      "query": "rivage steamdb",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 3.0
+    },
+    {
+      "query": "rivage walkthrough",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0.0,
+      "position": 10.6667
+    }
+  ],
+  "first_incomplete_date": "2026-09-29",
+  "property": "sc-domain:rivagegame.xyz",
+  "start": "2026-09-28",
+  "end": "2026-09-29",
+  "collected_at_local_date": "2026-10-01",
+  "type": "web",
+  "data_state": "all",
+  "row_limit_per_dimension": 10,
+  "note": "Totals are undimensioned property aggregation. Page/query lists are bounded samples and are not added together."
+}

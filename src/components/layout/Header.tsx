@@ -19,6 +19,17 @@ export function Header({ locale }: { locale: string }) {
       <nav className="primary-nav" aria-label="Primary navigation">
         {primaryNavigation.map((item) => {
           const href = localizePath(item.href, locale);
+          if (item.children?.length) {
+            return (
+              <details key={href} className="nav-group">
+                <summary>{navigationLabel(item, locale)}</summary>
+                <div className="nav-group-links">
+                  <Link href={href}>{navigationLabel(item, locale)}</Link>
+                  {item.children.map((child) => <Link key={child.href} href={localizePath(child.href, locale)}>{navigationLabel(child, locale)}</Link>)}
+                </div>
+              </details>
+            );
+          }
           return (
             <Link key={href} href={href}>
               {navigationLabel(item, locale)}

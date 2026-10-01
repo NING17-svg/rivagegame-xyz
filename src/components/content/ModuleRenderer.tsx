@@ -7,7 +7,7 @@ import { RecipeList } from "@/components/content/RecipeList";
 import { ScheduleBlock } from "@/components/content/ScheduleBlock";
 import { StatusCallout } from "@/components/content/StatusCallout";
 import { StepList } from "@/components/content/StepList";
-import { renderMarkdown } from "@/lib/markdown";
+import { RichText } from "@/components/content/RichText";
 import type { GuideModule } from "@/types/modules";
 
 function assertNever(value: never): never {
@@ -27,7 +27,7 @@ export function ModuleRenderer({ modules }: { modules: GuideModule[] }) {
                 className="content-module prose-module"
               >
                 <h2>{guideModule.heading}</h2>
-                <div className="prose-body">{renderMarkdown(guideModule.body)}</div>
+                <div className="prose-body"><RichText text={guideModule.body} /></div>
                 {guideModule.links?.length ? (
                   <div className="inline-link-list">
                     {guideModule.links.map((link) => (

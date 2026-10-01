@@ -17,6 +17,8 @@ export function HomePage({ page }: { page: PageContent }) {
   const related = getRelatedPages(page);
   const recentUpdates = getRecentUpdates(page.locale);
   const labels = getLocaleUiLabels(page.locale);
+  const entryModules = page.modules.slice(0, 1);
+  const detailModules = page.modules.slice(1);
   const variant =
     page.presentation.shell === "home"
       ? (page.presentation.variant ?? theme.variants.home)
@@ -28,12 +30,13 @@ export function HomePage({ page }: { page: PageContent }) {
       <JsonLd data={collectionPageSchema(page)} />
       <JsonLd data={faqSchema(faqs)} />
       <PageHero page={page} priority />
+      <ModuleRenderer modules={entryModules} />
       <section className="home-summary">
         <p className="quick-answer">{page.quickAnswer}</p>
         <KeyFacts facts={page.keyFacts} />
       </section>
       <AdSlot placement="responsive-banner" />
-      <ModuleRenderer modules={page.modules} />
+      <ModuleRenderer modules={detailModules} />
       {recentUpdates.length ? (
         <section className="recent-updates" aria-labelledby="recent-updates-heading">
           <h2 id="recent-updates-heading">{labels.recentUpdates}</h2>

@@ -8,6 +8,7 @@ export interface LocaleUiLabels {
   searchNoResults: string;
   recentUpdates: string;
   lastReviewed: string;
+  onThisPage?: string;
 }
 
 export interface SiteLocaleConfig {

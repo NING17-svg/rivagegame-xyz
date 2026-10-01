@@ -57,8 +57,8 @@ export const page_gameplay_overview: PageContent = {
     {
       "id": "quick-answer",
       "type": "prose",
-      "heading": "Quick Answer",
-      "body": "Rivage gameplay is described on the Steam store page (AppID 4094660) using the genre tags and the core loop phrase the developer published there. As of research date 2026-09-22, the Steam store page is the only confirmed source for Rivage gameplay wording, with the Steam Community hub adding community context. Non-game Rivage namesakes (day spa, Oak Kitchen, apartments, Beau Rivage, Le Rivage NYC, Yamaha Rivage PM consoles) are explicitly excluded from Rivage gameplay claims on this site."
+      "heading": "Scope of this overview",
+      "body": "Non-game Rivage namesakes (day spa, Oak Kitchen, apartments, Beau Rivage, Le Rivage NYC, Yamaha Rivage PM consoles) are explicitly excluded from Rivage gameplay claims on this site."
     },
     {
       "id": "genre-classification",
@@ -103,4 +103,4 @@ export const page_gameplay_overview: PageContent = {
   ],
   "sourceStatus": "official",
   "lastReviewed": "2026-09-22"
-}
+};

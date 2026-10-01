@@ -12,13 +12,13 @@ hreflang, sitemap, and route-manifest validation.
 
 | URL | File/Route | Type | Primary Keyword | Search Intent | Primary CTA | Internal-Link Role | Notes |
 |---|---|---|---|---|---|---|---|
-| `/` | `src/data/pages/home.ts` | Landing | Rivage release date and Steam hub | Find the Rivage launch entry point | Release Date / Browse Guides / Steam Store | Hub | Routes US English search users into Rivage coverage. |
+| `/` | `src/data/pages/home.ts` | Landing | Rivage release date and Steam hub | Find a specific puzzle or guide | Open walkthrough / Start with the basics | Task hub | V4 H1: Rivage guides & walkthrough; existing SEO title retained. Six task entries precede background and release facts. |
 | `/release-date` | `src/data/pages/page_release_date.ts` | Guide | Rivage release date | Confirm the Rivage Steam launch date | Platforms / FAQ | Supporting hub | Tied to Steam store page for AppID 4094660. |
 | `/platforms` | `src/data/pages/page_platforms.ts` | Guide | Rivage platforms | Check Rivage console and PC platform status | Release Date / FAQ | Supporting hub | Flags PS5/Xbox/Switch/Deck status as unconfirmed. |
 | `/system-requirements` | `src/data/pages/page_system_requirements.ts` | Guide | Rivage PC system requirements | Check Rivage PC spec status | Platforms / FAQ | Supporting | Notes that store page has not published spec rows. |
 | `/demo` | `src/data/pages/page_demo.ts` | Guide | Rivage demo | Confirm Rivage demo status | Release Date / FAQ | Supporting | Standalone Rivage Demo on Steam (AppID 4465080) since April 16, 2026; saves do not carry over. |
-| `/guides` | `src/data/pages/page_guides_hub.ts` | Guide | Rivage guides | Browse Rivage beginner, walkthrough, progression guides | Beginner Guide / Walkthrough | Hub | Card-grid hub shell. |
-| `/guides/walkthrough` | `src/data/pages/page_walkthrough.ts` | Guide | Rivage walkthrough | Read the Parts 1-4 plus Chess Board endgame walkthrough | Beginner Guide / Gameplay | Supporting | Anchor sections per Part plus Chess Board endgame with randomized-code caveat. |
+| `/guides` | `src/data/pages/page_guides_hub.ts` | Guide | Rivage guides | Browse Rivage beginner, walkthrough, progression guides | Beginner Guide / Walkthrough | Hub | Card-grid hub shell with direct Parts 1–4 and Chess Board anchor entries. |
+| `/guides/walkthrough` | `src/data/pages/page_walkthrough.ts` | Guide | Rivage walkthrough | Read the Parts 1-4 plus Chess Board endgame walkthrough | Beginner Guide / Gameplay | Supporting | Parts 1–4 and Chess Board use 16 numbered steps; contents and existing anchor IDs preserved, with randomized-code caveat. |
 | `/guides/beginner` | `src/data/pages/page_beginner_guide.ts` | Guide | Rivage beginner guide | Read first-session Rivage systems | Walkthrough / Gameplay | Supporting | Anchored to Steam store page genre tags. |
 | `/gameplay` | `src/data/pages/page_gameplay_overview.ts` | Guide | Rivage gameplay | Read Rivage genre and core loop summary | Guides / FAQ | Supporting | Steam store description is the only source. |
 | `/trailer` | `src/data/pages/page_trailer_and_media.ts` | Guide | Rivage trailer | Locate official Rivage trailer and gameplay footage | Release Date / FAQ | Supporting | Steam store page + Steam Community hub. |
@@ -44,7 +44,7 @@ hreflang, sitemap, and route-manifest validation.
 
 ## Internal Linking Map
 
-- Homepage should link to the most current high-demand pages: release date, platforms, guides, gameplay, demo, system requirements.
+- Homepage first links to the existing walkthrough chapter anchors and beginner guide, then demo, platforms, release date and gameplay.
 - Guides hub should link to beginner guide, walkthrough, gameplay, release date.
 - Release Date should link to platforms, demo, FAQ, official Steam sources.
 - FAQ should include all current high-demand answer pages.

@@ -3,6 +3,7 @@ import { FAQBlock } from "@/components/content/FAQBlock";
 import { ModuleRenderer } from "@/components/content/ModuleRenderer";
 import { RelatedLinks } from "@/components/content/RelatedLinks";
 import { RightRail } from "@/components/layout/RightRail";
+import { PageContents } from "@/components/content/PageContents";
 import { PageHero } from "@/components/pages/PageHero";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { theme } from "@/data/theme";
@@ -36,10 +37,11 @@ export function ContentPage({ page }: { page: PageContent }) {
       <JsonLd data={primarySchema} />
       {faqs.length ? <JsonLd data={faqSchema(faqs)} /> : null}
       <PageHero page={page} />
-      <AdSlot placement="responsive-banner" />
       <div className="content-layout" data-variant={variant}>
         <div className="article-body">
           <p className="quick-answer">{renderInlineMarkdown(page.quickAnswer)}</p>
+          <div className={variant === "reading-right-rail" ? "inline-contents mobile-contents" : "inline-contents"}><PageContents page={page} collapsible /></div>
+          <AdSlot placement="responsive-banner" />
           <ModuleRenderer modules={leadingModules} />
           <AdSlot placement="native-banner" />
           {remainingModules.length ? (

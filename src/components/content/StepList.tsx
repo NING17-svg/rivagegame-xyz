@@ -1,4 +1,5 @@
 import type { StepsModule } from "@/types/modules";
+import { RichText } from "@/components/content/RichText";
 
 export function StepList({ guideModule }: { guideModule: StepsModule }) {
   return (
@@ -12,7 +13,7 @@ export function StepList({ guideModule }: { guideModule: StepsModule }) {
             </span>
             <div>
               <h3>{item.title}</h3>
-              <p>{item.body}</p>
+              <RichText text={item.body} />
               {item.doneCondition ? (
                 <p className="module-note">
                   <strong>Done when:</strong> {item.doneCondition}

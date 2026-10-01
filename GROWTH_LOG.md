@@ -6,6 +6,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-10-01 - V4 guide template trial
+
+- Baseline: repair commit `2d1a625accd7eca2e00f0b160eea7530d1c76398`; launched September 28. GSC property `sc-domain:rivagegame.xyz`, September 28–29: 98 impressions, 1 click; `/guides` has 54 impressions and 1 click. September 29 is marked incomplete by GSC. This is selection evidence, not proof of an improvement.
+- UI: first homepage module links to five existing walkthrough sections and the beginner guide; grouped Guides/Game information navigation; existing paper/blue theme retained with a solid background; Markdown structure, compact content headers and mobile contents from V4.
+- Page assembly: Parts 1–4 and Chess Board become 16 numbered steps using the exact earlier sentences. Guide hub gains direct puzzle entries. Home H1 and CTAs describe the guide task; SEO titles/descriptions, routes, chapter IDs, FAQs, ads, analytics and deployment settings stay intact.
+- Content repair: removed duplicated summary prefixes in the beginner and gameplay modules; those sentences still appear in each page's Quick Answer, and extra scope text is retained.
+- Verification: template/content/render integrity, static export, rendered SEO and reading checks; one-time conservation of guide answer sentences and page identity; browser checks of desktop task-card navigation and 390px mobile contents. The trial does not verify game facts again or establish a traffic/revenue effect.
+- Affected public URLs: shared header/rendering across all 16 routes; content assembly changes on `/`, `/guides`, `/guides/walkthrough`, `/guides/beginner`, `/gameplay`. See `V4_TRIAL.md` and `docs/v4-gsc-baseline.json`.
+
 ## Change Log
 
 ### 2026-10-01 - Public page render-quality repair

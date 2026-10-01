@@ -41,6 +41,7 @@ export const site: SiteConfig = {
       htmlLang: "en-US",
       openGraphLocale: "en_US",
       ui: {
+        onThisPage: "On this page",
         searchOpen: "Search",
         searchClose: "Close search",
         searchPlaceholder: "Search this guide",
